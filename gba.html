@@ -40,11 +40,20 @@
 		text-align: center;
 		padding: 14px 16px;
 		text-decoration: none;
+		font-family: 'Chelsea Market', sans-serif;
 	}
 	
 	li a:hover {
 		background-color: #000000;
 	}
+		h1 {
+			font-family: 'Chelsea Market', sans-serif;
+			color: #6B4C8B;
+		}
+		p {
+			font-family: 'Chelsea Market', sans-serif;
+			color: #FFF;
+		}
 	</style>
 </head>
 
@@ -169,7 +178,7 @@ a {
  <div class="center-screen">
   <div class="container">
     <div class="box">
-    <input type="text" id="gsearchbar" onkeyup="document.querySelectorAll('#glist>a').forEach(l=>l.style.display=l.textContent.toUpperCase().includes(this.value.toUpperCase().replace(/ /g,''))?'block':'none')" autocomplete="off" spellcheck="false" placeholder="Search 🔎" />
+    <input type="text" id="gsearchbar" onkeyup="document.querySelectorAll('#glist>a').forEach(l=>l.style.display=l.textContent.toUpperCase().includes(this.value.toUpperCase().replace(/ /g,''))?'block':'none')" autocomplete="off" spellcheck="false" placeholder="search for games here.." />
     <div id="glist">
 	    
 <a href="./launcher.html#advancewars">Advance Wars</a>

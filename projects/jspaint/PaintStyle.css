@@ -1,0 +1,8 @@
+body{
+    text-align: center;
+    align-items: center;
+}
+#canvas1 {
+    border-style: solid;
+    border-color: gray;
+}

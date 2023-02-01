@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="PaintStyle.css">
+        <title>JSPaint | nabilgames</title>
+        <meta name="theme-color" content="#36393F">
+        <meta property="og:image:url" content="https://i.ibb.co/n0DbR7k/Untitled-28-modified.png">
+        <meta property="og:image:secure_url" content="https://i.ibb.co/n0DbR7k/Untitled-28-modified.png">
+        <meta name="description" content="Use JSPaint online for free, unblocked!">
+        <link rel="icon" type="image/jpeg" sizes="180x180" href="https://i.ibb.co/n0DbR7k/Untitled-28-modified.png">
+
+    </head>
+    <body>
+        <style>
+          h1 {
+                 font-family: 'Roboto', sans-serif;
+             }
+            
+            p {
+                 font-family: 'Roboto', sans-serif;
+             }
+        </style>
+        <h1>JSPaint</h1>
+        <p>Set Width: <input type="text" onchange="setWidth(this.value)" placeholder="Recommended: 1000." />
+        Set Height: <input type="text" onchange="setHeight(this.value)" placeholder="Recommended: 600." /> </p>
+        
+        <hr>
+
+        <canvas id="canvas1" onmousedown="startPaint()" onmousemove="doPaint(event.offsetX, event.offsetY)" onmouseup="endPaint()"> </canvas>
+        
+        <hr>
+
+        <p>Color: <input type="color" value="#000" onchange="changeColor(this.value)"/> </p>
+        <p>Size: <input id="sizeInput" type="range" min="1" max="50" value="25" oninput="resizeBrush(this.value)" /> 
+        <output id="sizeOutput">25</output> </p>
+       
+        <hr>
+
+        <p><input id="clear" type="button" value="Clear Canvas" onclick="clearCanvas()"/>  </p>
+
+
+        <script src="PaintCode.js"> </script>
+
+
+    </body>
+    
+</html>
